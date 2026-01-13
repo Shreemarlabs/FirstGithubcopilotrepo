@@ -89,12 +89,31 @@ section h3 {
   letter-spacing: 0.5px;
 }
 
+/* Hide bullet points and left margin for participants list */
 .activity-card .participants-list {
-  list-style-type: disc;
-  margin-left: 20px;
+  list-style-type: none;
+  margin-left: 0;
   color: #333;
   font-size: 0.97rem;
   padding-left: 0;
+}
+
+/* Style for delete icon */
+.delete-participant {
+  display: inline-block;
+  margin-left: 8px;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 1.1em;
+  vertical-align: middle;
+  background: none;
+  border: none;
+  padding: 0 2px;
+  transition: color 0.2s;
+}
+.delete-participant:hover {
+  color: #ff1744;
+}
 }
 
 .activity-card .participants-list li {
